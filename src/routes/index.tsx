@@ -109,12 +109,11 @@ function Marquee() {
     "Quarry Solutions",
     "Field Service",
     "Spare Parts",
-    "Turnkey Plants",
   ];
   return (
     <div className="border-b border-border bg-card/40 overflow-hidden">
       <div className="container-x py-4 flex items-center gap-8 whitespace-nowrap overflow-x-auto no-scrollbar">
-        {items.concat(items).map((t, i) => (
+        {items.map((t, i) => (
           <div key={i} className="flex items-center gap-8 shrink-0">
             <span className="font-display uppercase tracking-widest text-sm text-muted-foreground">{t}</span>
             <span className="text-primary">/</span>
